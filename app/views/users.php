@@ -12,7 +12,7 @@ $users = $users ?? [];
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-    <style>
+    <style nonce="<?= defined('CSP_NONCE') ? htmlspecialchars(CSP_NONCE, ENT_QUOTES, 'UTF-8') : '' ?>">
         *, *::before, *::after { box-sizing: border-box; }
 
         :root {
